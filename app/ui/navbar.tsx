@@ -80,6 +80,7 @@ export default function Example() {
                     </Link>
                   </div>
                 </div> 
+
               </div>
             </div>
           </div>
@@ -100,6 +101,18 @@ export default function Example() {
                   {item.name}
                 </Disclosure.Button>
               ))}
+            </div>
+            <div className="space-y-1 px-2 pb-3 pt-2">
+                    <Link
+                      href="/login"
+                      className="shadow bg-blue-500 hover:bg-blue-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded me-2">
+                                <span>Log in</span>
+                    </Link>
+                    <Link
+                      href="/register"
+                      className="shadow bg-purple-500 hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded">
+                                Sign up
+                    </Link>
             </div>
           </Disclosure.Panel>
         </>
