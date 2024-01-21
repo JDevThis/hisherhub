@@ -10,7 +10,7 @@ import { Button } from './button';
 export default function LoginForm() {
   return (
     <form className="space-y-3">
-      <div className="flex-1 rounded-lg bg-gray-50 px-6 pb-4 pt-8">
+      <div className="flex-1 rounded-lg px-6 pb-4 pt-8">
         <h1 className={`${lusitana.className} mb-3 text-2xl`}>
           Use the form below to register
         </h1>
@@ -55,7 +55,9 @@ export default function LoginForm() {
             </div>
           </div>
         </div>
-        <LoginButton />
+        <div className='flex justify-start'>
+        <RegButton />
+        </div>
         <div className="flex h-8 items-end space-x-1">
           {/* Add form errors here */}
         </div>
@@ -64,10 +66,10 @@ export default function LoginForm() {
   );
 }
 
-function LoginButton() {
+function RegButton() {
   return (
-    <Button className="mt-4 w-full">
-      Log in <ArrowRightIcon className="ml-auto h-5 w-5 text-gray-50" />
+    <Button className="mt-4">
+      Sign Up <ArrowRightIcon className="ml-auto h-5 w-5 text-gray-50" />
     </Button>
   );
 }

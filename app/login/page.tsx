@@ -9,8 +9,8 @@ export default function Page() {
   return (
     <main className="flex min-h-screen flex-col">
 
-      <div className=" flex grow justify-center flex-col gap-4 md:flex-row">
-        <div className="flex justify-center gap-6 rounded-lg">
+    <div className=" flex justify-center flex-col md:flex-row">
+        <div className="flex justify-center rounded-lg">
           <p className={`text-xl text-gray-800 md:text-3xl md:leading-normal`}> </p>
           <div>
             { <LoginForm /> }
