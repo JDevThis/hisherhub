@@ -15,10 +15,6 @@ export default function Page() {
           <div>
             { <SearchForm /> }
           </div>
-
-         
-          
-
         </div>
       </div>
     </main>
