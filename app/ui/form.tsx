@@ -14,7 +14,7 @@ import Search from '@/app/ui/search';
 export default function SearchForm() {
   return (
     <form className="space-y-3">
-      <div className="flex-1 rounded-lg bg-gray-50 px-6 pb-4 pt-8">
+      <div className="flex-1 rounded-lg bg-gray-50 px-6 pb-4 ">
       <Image
             src="/hhhlogo.png"
             width={200 }
