@@ -21,10 +21,10 @@ export default function SearchForm() {
       <div className="w-full flex justify-center">
         <Image
             src="/hhhlogo.png"
-            width={200 }
-            height={200}
-            className="block py-10"
-            alt="Screenshots of the dashboard project showing desktop version"
+            width={300}
+            height={100}
+            className="block py-[9px]"
+            alt="HisHerHub Logo"
           />
           </div>
         <div className="w-full">

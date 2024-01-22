@@ -1,4 +1,5 @@
 import { lusitana } from '@/app/ui/fonts';
+import Image from 'next/image';
 import {
   AtSymbolIcon,
   KeyIcon,
@@ -10,11 +11,17 @@ import { Button } from './button';
 export default function LoginForm() {
   return (
     <form className="space-y-3">
-      <div className="flex-1 rounded-lg px-6 pb-4 pt-8">
-        <h1 className={`${lusitana.className} mb-3 text-2xl`}>
-          Please log in to continue.
-        </h1>
-        <div className="w-full">
+      <div className="flex-1 rounded-lg px-6 pb-4 ">
+      <div className="w-full flex justify-center">
+        <Image
+            src="/hhhlogo.png"
+            width={300}
+            height={100}
+            className="block py-[9px]"
+            alt="HisHerHub Logo"
+          />
+          </div>
+          <div className="w-full">
           <div>
             <label
               className="mb-3 mt-5 block text-xs font-medium text-gray-900"
@@ -55,7 +62,7 @@ export default function LoginForm() {
             </div>
           </div>
         </div>
-        <div className='flex justify-start'>
+        <div className='flex justify-end'>
         <LoginButton />
         </div>
         <div className="flex h-8 items-end space-x-1">
@@ -63,6 +70,7 @@ export default function LoginForm() {
         </div>
       </div>
     </form>
+
   );
 }
 
