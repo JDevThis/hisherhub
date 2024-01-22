@@ -175,34 +175,39 @@ export function InvoicesTableSkeleton() {
             <InvoicesMobileSkeleton />
             <InvoicesMobileSkeleton />
             <InvoicesMobileSkeleton />
+            <InvoicesMobileSkeleton />
           </div>
           <table className="hidden min-w-full text-gray-900 md:table">
             <thead className="rounded-lg text-left text-sm font-normal">
-              <tr>
+            <tr>
                 <th scope="col" className="px-4 py-5 font-medium sm:pl-6">
-                  Customer
+                  Business Name
                 </th>
                 <th scope="col" className="px-3 py-5 font-medium">
-                  Email
+                  Business Location
                 </th>
                 <th scope="col" className="px-3 py-5 font-medium">
-                  Amount
+                  Gender Catered for
                 </th>
                 <th scope="col" className="px-3 py-5 font-medium">
-                  Date
+                  Services
                 </th>
                 <th scope="col" className="px-3 py-5 font-medium">
-                  Status
+                  Website
                 </th>
-                <th
-                  scope="col"
-                  className="relative pb-4 pl-3 pr-6 pt-2 sm:pr-6"
-                >
+                <th scope="col" className="px-3 py-5 font-medium">
+                  Instagram
+                </th>
+                <th scope="col" className="px-3 py-5 font-medium">
+                  Facebook
+                </th>
+                <th scope="col" className="relative py-3 pl-6 pr-3">
                   <span className="sr-only">Edit</span>
                 </th>
               </tr>
             </thead>
             <tbody className="bg-white">
+              <TableRowSkeleton />
               <TableRowSkeleton />
               <TableRowSkeleton />
               <TableRowSkeleton />
