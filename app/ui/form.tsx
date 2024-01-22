@@ -31,11 +31,11 @@ export default function SearchForm() {
           <div>
             <label
               className="mb-3 mt-5 block text-xs font-medium text-gray-900"
-              htmlFor="email"
+              htmlFor="searchdiv"
             >
               What service do you need?
             </label>
-            <div className="relative">
+            <div id='searchdiv' className="relative">
             { <Search placeholder="Search for a service..." /> }
             </div>
           </div>
