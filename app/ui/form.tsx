@@ -6,8 +6,11 @@ import {
   AtSymbolIcon,
   KeyIcon,
   ExclamationCircleIcon,
+  UserIcon,
+  UserGroupIcon,
 } from '@heroicons/react/24/outline';
 import { ArrowRightIcon } from '@heroicons/react/20/solid';
+import { MagnifyingGlassIcon } from '@heroicons/react/24/outline';
 import { Button } from './button';
 import Search from '@/app/ui/search';
 
@@ -15,13 +18,15 @@ export default function SearchForm() {
   return (
     <form className="space-y-3">
       <div className="flex-1 rounded-lg px-6 pb-4 ">
-      <Image
+      <div className="w-full flex justify-center">
+        <Image
             src="/hhhlogo.png"
             width={200 }
             height={200}
             className="block py-10"
             alt="Screenshots of the dashboard project showing desktop version"
           />
+          </div>
         <div className="w-full">
           <div>
             <label
@@ -31,7 +36,7 @@ export default function SearchForm() {
               What service do you need?
             </label>
             <div className="relative">
-            { <Search placeholder={''} /> }
+            { <Search placeholder="Search for a service..." /> }
             </div>
           </div>
           <div>
@@ -83,22 +88,22 @@ export default function SearchForm() {
 function FormButton() {
     return (
         <div className="flex gap-1 w-full">
-            <Button className="w-full bg-blue-500">
-            His <ArrowRightIcon className="ml-auto h-5 w-5 text-gray-50" />
+            <Button className="w-full bg-blue-500 gap-2">
+            His <UserIcon className="ml-auto h-5 w-5 text-teal-500" />
             </Button>
-            <Button className="w-full bg-pink-500">
-            Her <ArrowRightIcon className="ml-auto h-5 w-5 text-gray-50" />
+            <Button className="w-full bg-pink-500 gap-2">
+            Her <UserIcon className="ml-auto h-5 w-5 text-purple-500" />
             </Button>
-            <Button className="w-full bg-purple-500">
-            Unisex <ArrowRightIcon className="ml-auto h-5 w-5 text-gray-50" />
+            <Button className="w-full bg-purple-500 gap-2">
+            Unisex <UserGroupIcon className="ml-auto h-5 w-5 text-gray-50" />
             </Button>
       </div>
     );
   }
 function LoginButton() {
   return (
-    <Button className="mt-4 bg-teal-500">
-      Search <ArrowRightIcon className="ml-auto h-5 w-5 text-gray-50" />
+    <Button className="mt-4 bg-teal-500 gap-2">
+      Search <MagnifyingGlassIcon className="ml-auto h-5 w-5 text-gray-50 " />
     </Button>
   );
 }
