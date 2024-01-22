@@ -1,4 +1,4 @@
-import { Revenue } from './definitions';
+import { Business } from './definitions';
 
 export const formatCurrency = (amount: number) => {
   return (amount / 100).toLocaleString('en-US', {
@@ -20,7 +20,7 @@ export const formatDateToLocal = (
   const formatter = new Intl.DateTimeFormat(locale, options);
   return formatter.format(date);
 };
-
+/*
 export const generateYAxis = (revenue: Revenue[]) => {
   // Calculate what labels we need to display on the y-axis
   // based on highest record and in 1000s
@@ -34,7 +34,7 @@ export const generateYAxis = (revenue: Revenue[]) => {
 
   return { yAxisLabels, topLabel };
 };
-
+*/
 export const generatePagination = (currentPage: number, totalPages: number) => {
   // If the total number of pages is 7 or less,
   // display all pages without any ellipsis.
