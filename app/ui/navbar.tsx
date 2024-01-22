@@ -5,7 +5,7 @@ import { Bars3Icon, BellIcon, XMarkIcon, DocumentDuplicateIcon, ArrowRightIcon }
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import clsx from 'clsx';
-
+import Image from 'next/image';
 const navigation = [
     { name: 'Home', href: '/', current: true },
     { name: 'About', href: '/about', current: false },
@@ -41,11 +41,13 @@ export default function Example() {
                 </Disclosure.Button>
               </div>
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-                <div className="flex flex-shrink-0 items-center">
-                  <img
-                    className="h-8 w-auto"
-                    src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
-                    alt="Your Company"
+                <div className="flex flex-shrink-0 items-center max-sm:hidden">
+                  <Image
+                    src="/hhhlogo.png"
+                    width={50}
+                    height={50}
+                    className="block py-[9px]"
+                    alt="HisHerHub Logo"
                   />
                 </div>
                 <div className="hidden sm:ml-6 sm:block">
